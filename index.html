@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="contenedor">
+        <h1>Gestor de Tareas</h1>
+        
+        <form id="form-tarea" class="formulario">
+            <input type="text" id="input-tarea" placeholder="Escribe una nueva actividad..." required>
+            <button type="submit">Agregar</button>
+        </form>
+
+        <div class="estado-tareas">
+            <span>Tareas pendientes: <strong id="contador-pendientes">0</strong></span>
+        </div>
+
+        <ul id="lista-tareas" class="lista"></ul>
+    </main>
+
+    <!-- Scripts modulares del equipo -->
+    <script src="tareas.js"></script>
+    <script src="acciones.js"></script>
+</body>
+</html>
